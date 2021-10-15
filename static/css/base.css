@@ -53,6 +53,10 @@ body {
     color: #b49444 !important;
 }
 
+.bg-theme {
+    background: #424242;
+}
+
 .border-black {
     border: 2px solid #DFB959 !important;
 }
