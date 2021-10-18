@@ -12,7 +12,7 @@
         "price": 2.70,
         "size": 355,
         "abv": 4.6,
-        "image": "/media/Founders-All-Day-Vacay.jpg"
+        "image": "Founders-All-Day-Vacay.jpg"
       }
     },
     {
@@ -28,7 +28,7 @@
           "price": 2.50,
           "size": 355,
           "abv": 4.6,
-          "image": "/media/Founders-Green-Zebra.jpg"
+          "image": "Founders-Green-Zebra.jpg"
         }
       },
       {
@@ -44,7 +44,7 @@
           "price": 8.20,
           "size": 355,
           "abv": 12,
-          "image": "/media/Founders-KBS-Stout.jpg"
+          "image": "Founders-KBS-Stout.jpg"
         }
       },
       {
@@ -60,7 +60,7 @@
           "price": 3.00,
           "size": 440,
           "abv": 6,
-          "image": "/media/Kinnegar-Big-Bunny.jpg"
+          "image": "Kinnegar-Big-Bunny.jpg"
         }
       },
       {
@@ -76,7 +76,7 @@
           "price": 3.00,
           "size": 440,
           "abv": 5.1,
-          "image": "/media/Kinnegar-Rustbucket.jpg"
+          "image": "Kinnegar-Rustbucket.jpg"
         }
       },
       {
@@ -92,7 +92,7 @@
           "price": 3.00,
           "size": 440,
           "abv": 7.8,
-          "image": "/media/Kinnegar-Thumper.jpg"
+          "image": "Kinnegar-Thumper.jpg"
         }
       },
       {
@@ -108,7 +108,7 @@
           "price": 3.00,
           "size": 440,
           "abv": 4.8,
-          "image": "/media/Kinnegar-Yannaroddy.jpg"
+          "image": "Kinnegar-Yannaroddy.jpg"
         }
       },
       {
@@ -124,7 +124,7 @@
           "price": 3.30,
           "size": 440,
           "abv": 5.2,
-          "image": "/media/Lost-and-Grounded-Running-with-Sceptres.jpg"
+          "image": "Lost-and-Grounded-Running-with-Sceptres.jpg"
         }
       },
       {
@@ -140,7 +140,7 @@
           "price": 3.30,
           "size": 440,
           "abv": 5.2,
-          "image": "/media/Lost-Grounded-Helles.jpg"
+          "image": "Lost-Grounded-Helles.jpg"
         }
       },
       {
@@ -156,7 +156,7 @@
           "price": 3.30,
           "size": 440,
           "abv": 4.8,
-          "image": "/media/Lost-Grounded-Keller-Pils.jpg"
+          "image": "Lost-Grounded-Keller-Pils.jpg"
         }
       },
       {
@@ -172,7 +172,7 @@
           "price": 5.60,
           "size": 440,
           "abv": 10.5,
-          "image": "/media/Lough-Gill-Loconut.jpg"
+          "image": "Lough-Gill-Loconut.jpg"
         }
       },
       {
@@ -188,7 +188,7 @@
           "price": 3.80,
           "size": 440,
           "abv": 4.7,
-          "image": "/media/Lough-Gill-Ripple-White.jpg"
+          "image": "Lough-Gill-Ripple-White.jpg"
         }
       },
       {
@@ -204,7 +204,7 @@
           "price": 4.50,
           "size": 440,
           "abv": 7.2,
-          "image": "/media/Lough-Gill-Sink-Or-Swim.jpg"
+          "image": "Lough-Gill-Sink-Or-Swim.jpg"
         }
       },
       {
@@ -220,7 +220,7 @@
           "price": 3.00,
           "size": 440,
           "abv": 6.8,
-          "image": "/media/O'Hara's-Hazy-IPA.jpg"
+          "image": "O'Hara's-Hazy-IPA.jpg"
         }
       },
       {
@@ -236,7 +236,7 @@
           "price": 3.00,
           "size": 440,
           "abv": 4.3,
-          "image": "/media/O'Hara's-Irish-Red-Nitro.jpg"
+          "image": "O'Hara's-Irish-Red-Nitro.jpg"
         }
       },
       {
@@ -252,7 +252,7 @@
           "price": 3.00,
           "size": 440,
           "abv": 4.3,
-          "image": "/media/O'Haras-Nitro-Stout.jpg"
+          "image": "O'Haras-Nitro-Stout.jpg"
         }
       },
       {
@@ -268,7 +268,7 @@
           "price": 2.50,
           "size": 330,
           "abv": 7.2,
-          "image": "/media/White-Hag-Bran-And-Sceolan.jpg"
+          "image": "White-Hag-Bran-And-Sceolan.jpg"
         }
       },
       {
@@ -284,7 +284,7 @@
           "price": 2.50,
           "size": 330,
           "abv": 4.2,
-          "image": "/media/White-Hag-Little-Fawn.jpg"
+          "image": "White-Hag-Little-Fawn.jpg"
         }
       },
       {
@@ -300,7 +300,7 @@
           "price": 3.55,
           "size": 440,
           "abv": 6,
-          "image": "/media/White-Hag-Peach.jpg"
+          "image": "White-Hag-Peach.jpg"
         }
       }
 ]
