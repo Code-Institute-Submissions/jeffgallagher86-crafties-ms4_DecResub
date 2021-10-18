@@ -2,6 +2,10 @@ from django.db import models
 
 
 class BreweryCategory(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Brewery Category'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -13,6 +17,10 @@ class BreweryCategory(models.Model):
 
 
 class StyleCategory(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Style Category'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -24,6 +32,10 @@ class StyleCategory(models.Model):
 
 
 class CountryCategory(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Country Category'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -42,8 +54,8 @@ class Product(models.Model):
     style = models.ForeignKey('StyleCategory', null=True, blank=True, on_delete=models.SET_NULL)
     country = models.ForeignKey('CountryCategory', null=True, blank=True, on_delete=models.SET_NULL)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    size = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    abv = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    size = models.DecimalField(max_digits=6, decimal_places=0, null=True, blank=True)
+    abv = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
