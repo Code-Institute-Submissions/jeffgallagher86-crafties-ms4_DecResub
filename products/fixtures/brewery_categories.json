@@ -1,0 +1,50 @@
+[
+    {
+      "pk": 1,
+      "model": "products.brewerycategory",
+      "fields": {
+        "name": "kinnegar",
+        "friendly_name": "Kinnegar"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.brewerycategory",
+      "fields": {
+        "name": "founders",
+        "friendly_name": "Founders"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.brewerycategory",
+      "fields": {
+        "name": "lough_gill",
+        "friendly_name": "Lough Gill"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.brewerycategory",
+      "fields": {
+        "name": "oharas",
+        "friendly_name": "O'Hara's"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.brewerycategory",
+      "fields": {
+        "name": "white_hag",
+        "friendly_name": "White Hag"
+      }
+    },
+    {
+        "pk": 6,
+        "model": "products.brewerycategory",
+        "fields": {
+          "name": "lost_and_grounded",
+          "friendly_name": "Lost & Grounded"
+        }
+    }
+  ]

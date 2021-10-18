@@ -1,0 +1,306 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "crf00000001",
+        "name": "Founders All Day Vacay Session Wheat Ale",
+        "description": "A new session wheat ale which is full of Summer sweetness along with delicate notes of citrus and tropical fruits. Inspired by the ultimate vacay or staycay which most of us will be doing this year! Very sessionable at only 4.6%.",
+        "brewery": 2,
+        "style": 4,
+        "country": 3,
+        "price": 2.70,
+        "size": 355,
+        "abv": 4.6,
+        "image": "/media/Founders-All-Day-Vacay.jpg"
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000002",
+          "name": "Founders Green Zebra",
+          "description": "Initially released as part of the Founders Artist Series in 2017, this is everything you'd expect in a gose; crisp, tart and ever so slightly sweet. This is lightly hopped with tons of juicy fruit including watermelon. A smooth, dry finish brought upon by the addition of sea salt. One for a summers day.",
+          "brewery": 2,
+          "style": 5,
+          "country": 3,
+          "price": 2.50,
+          "size": 355,
+          "abv": 4.6,
+          "image": "/media/Founders-Green-Zebra.jpg"
+        }
+      },
+      {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000003",
+          "name": "Founders KBS Stout",
+          "description": "A big imperial stout for when you need that big coffee/chocolate/bourbon hit in your beer! Founders KBS Stout is brewed with a massive amount of coffee and chocolate and then bourbon barrel-aged for one year to allow the flavours to really shine. Incredibly silky and full-bodied with notes of vanilla, cocoa, roasted coffee and charred oak. Go on and give your taste buds a treat!",
+          "brewery": 2,
+          "style": 6,
+          "country": 3,
+          "price": 8.20,
+          "size": 355,
+          "abv": 12,
+          "image": "/media/Founders-KBS-Stout.jpg"
+        }
+      },
+      {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000004",
+          "name": "Kinnegar Big Bunny",
+          "description": "Described as the “bigger, juicier sister” of White Rabbit session IPA, this East Coast Style IPA has plenty of hop bitterness complemented by the creamy, wheat mouth feel. Expect some crisp, citrus fruity flavours.",
+          "brewery": 1,
+          "style": 1,
+          "country": 1,
+          "price": 3.00,
+          "size": 440,
+          "abv": 6,
+          "image": "/media/Kinnegar-Big-Bunny.jpg"
+        }
+      },
+      {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000005",
+          "name": "Kinnegar Rustbucket",
+          "description": "A rye ale with a harmonious combination of rye spiciness and sharp citrusy hops, beautifully balanced and refreshing.",
+          "brewery": 1,
+          "style": 7,
+          "country": 1,
+          "price": 3.00,
+          "size": 440,
+          "abv": 5.1,
+          "image": "/media/Kinnegar-Rustbucket.jpg"
+        }
+      },
+      {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000006",
+          "name": "Kinnegar Thumper",
+          "description": "A double IPA with plenty of hoppy aromas driving forward melon and tropical fruit flavours. At 7.8% this is strong on alcohol as well as hops!",
+          "brewery": 1,
+          "style": 1,
+          "country": 1,
+          "price": 3.00,
+          "size": 440,
+          "abv": 7.8,
+          "image": "/media/Kinnegar-Thumper.jpg"
+        }
+      },
+      {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000007",
+          "name": "Kinnegar Yannaroddy",
+          "description": "A double IPA with plenty of hoppy aromas driving forward melon and tropical fruit flavours. At 7.8% this is strong on alcohol as well as hops!",
+          "brewery": 1,
+          "style": 6,
+          "country": 1,
+          "price": 3.00,
+          "size": 440,
+          "abv": 4.8,
+          "image": "/media/Kinnegar-Yannaroddy.jpg"
+        }
+      },
+      {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000008",
+          "name": "Lost & Grounded Running with Sceptres",
+          "description": "A 'Sceptre' is a trait/skill that makes someone unique and in this case, this beer is incredibly unique. Pilsner, Vienna and Caramalts have been combined with a good dose of hops to make this delicious tasting brew!",
+          "brewery": 6,
+          "style": 8,
+          "country": 2,
+          "price": 3.30,
+          "size": 440,
+          "abv": 5.2,
+          "image": "/media/Lost-and-Grounded-Running-with-Sceptres.jpg"
+        }
+      },
+      {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000009",
+          "name": "Lost & Grounded Helles Lager",
+          "description": "A gentle and balanced helles lager from Lost & Grounded which is all natural — completely unfiltered, unpasteurised and vegan friendly. Quite soft on the palate with biscuity, malty notes along with a touch of floral notes.",
+          "brewery": 6,
+          "style": 8,
+          "country": 2,
+          "price": 3.30,
+          "size": 440,
+          "abv": 5.2,
+          "image": "/media/Lost-Grounded-Helles.jpg"
+        }
+      },
+      {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000010",
+          "name": "Lost & Grounded Keller Pils",
+          "description": "Sometimes simple is best. German pilsner malt has been combined with Perle, magnum and hallertauer mittelfruh hops to produce a clean yet refreshing hop bitter beer.",
+          "brewery": 6,
+          "style": 3,
+          "country": 2,
+          "price": 3.30,
+          "size": 440,
+          "abv": 4.8,
+          "image": "/media/Lost-Grounded-Keller-Pils.jpg"
+        }
+      },
+      {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000011",
+          "name": "Lough Gill Loconut",
+          "description": "This one is bound to satisfy those sweet taste buds! This Imperial Pastry Stout by Lough Gill is brewed with coconut, vanilla, and blueberries. Wonderfully sweet and packs a hefty punch at 10.5% ABV!",
+          "brewery": 3,
+          "style": 6,
+          "country": 1,
+          "price": 5.60,
+          "size": 440,
+          "abv": 10.5,
+          "image": "/media/Lough-Gill-Loconut.jpg"
+        }
+      },
+      {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000012",
+          "name": "Lough Gill Ripple",
+          "description": "A raspberry sour that has wonderful jammy red fruity notes along with refreshing, sour tart flavours. Creamy milk sugar has been added for some extra sweetness.",
+          "brewery": 3,
+          "style": 2,
+          "country": 1,
+          "price": 3.80,
+          "size": 440,
+          "abv": 4.7,
+          "image": "/media/Lough-Gill-Ripple-White.jpg"
+        }
+      },
+      {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000013",
+          "name": "Lough Gill Sink or Swim",
+          "description": "A crisp and refreshing West Coast IPA which has been hopped with Idaho 7, Cascade, Columbus and Centennial hops.",
+          "brewery": 3,
+          "style": 1,
+          "country": 1,
+          "price": 4.50,
+          "size": 440,
+          "abv": 7.2,
+          "image": "/media/Lough-Gill-Sink-Or-Swim.jpg"
+        }
+      },
+      {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000014",
+          "name": "O'Hara's Hazy IPA",
+          "description": "A juicy, tropical, hazy IPA that is explosively aromatic! Soft and smooth mouthfeel despite packing a 6.8% ABV with a peach-forward flavour backed up by lots of tropical fruits.",
+          "brewery": 4,
+          "style": 1,
+          "country": 1,
+          "price": 3.00,
+          "size": 440,
+          "abv": 6.8,
+          "image": "/media/O'Hara's-Hazy-IPA.jpg"
+        }
+      },
+      {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000015",
+          "name": "O'Hara's Irish Red Nitro",
+          "description": "Looking for a smooth and creamy Irish Red full of sweet caramel and nutty biscuit flavours? Well, this is the one for you! This brew offers all the same great flavours of O’Hara’s Irish Red all amplified with a smooth creamy nitro and a nice warming finish. One to enjoy over all your favourite winter dishes!",
+          "brewery": 4,
+          "style": 7,
+          "country": 1,
+          "price": 3.00,
+          "size": 440,
+          "abv": 4.3,
+          "image": "/media/O'Hara's-Irish-Red-Nitro.jpg"
+        }
+      },
+      {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000016",
+          "name": "O'Hara's Nitro Stout",
+          "description": "Country Winner for Ireland at the World Beer Awards 2021! All your favourites from an O'Hara's Irish Stout, but now nitrogenated for a smoother, creamier texture! This brew carries a robust roast flavour complemented by a full-bodied and smooth mouth feel. The generous addition of Fuggle hops lends a tart bitterness to the dry espresso-like finish. A sessionable stout beer filled with rich complex coffee aromas mingled with light liquorice notes.",
+          "brewery": 4,
+          "style": 6,
+          "country": 1,
+          "price": 3.00,
+          "size": 440,
+          "abv": 4.3,
+          "image": "/media/O'Haras-Nitro-Stout.jpg"
+        }
+      },
+      {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000017",
+          "name": "White Hag Bran & Sceolan IPA",
+          "description": "Named after the two Wolfhounds of warrior Fionn Mac Cumhail, the Bran & Sceolan IPA is made from 100% Irish malt. Expect notes of pine and citrus along with plenty of sweet, malty flavours.",
+          "brewery": 5,
+          "style": 1,
+          "country": 1,
+          "price": 2.50,
+          "size": 330,
+          "abv": 7.2,
+          "image": "/media/White-Hag-Bran-And-Sceolan.jpg"
+        }
+      },
+      {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000018",
+          "name": "White Hag Little Fawn Session IPA",
+          "description": "A rather tasty American-style session IPA from White Hag Brewing in Sligo. Inspired by the mythical creature from which the beer gets its name, the flavours are influenced by their surroundings — rural hills and mountains. Expect lots of fruity hop notes balanced by 100% Irish malt, creating a delightfully complex sessionable IPA.",
+          "brewery": 5,
+          "style": 1,
+          "country": 1,
+          "price": 2.50,
+          "size": 330,
+          "abv": 4.2,
+          "image": "/media/White-Hag-Little-Fawn.jpg"
+        }
+      },
+      {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+          "sku": "crf00000019",
+          "name": "White Hag Glas Peaches & Cream Milkshake IPA",
+          "description": "Made with real peaches and vanilla! This seasonal release is now in its third year and seems to be as popular as ever. This has flavours of our childhood mixed with some hoppiness (not too much) and of course some alcohol. Lactose is added to give it some extra creaminess. Serve well chilled, perhaps with some ice cream or additional fruit.",
+          "brewery": 5,
+          "style": 1,
+          "country": 1,
+          "price": 3.55,
+          "size": 440,
+          "abv": 6,
+          "image": "/media/White-Hag-Peach.jpg"
+        }
+      }
+]

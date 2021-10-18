@@ -1,0 +1,66 @@
+[
+    {
+      "pk": 1,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "ipa",
+        "friendly_name": "IPA"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "sour",
+        "friendly_name": "Sour"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "pilsner",
+        "friendly_name": "Pilsner"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "wheat_ale",
+        "friendly_name": "Wheat Ale"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "gose",
+        "friendly_name": "Gose"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "stout",
+        "friendly_name": "Stout"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "ale",
+        "friendly_name": "Ale"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.stylecategory",
+      "fields": {
+        "name": "lager",
+        "friendly_name": "Lager"
+      }
+    }
+  ]
