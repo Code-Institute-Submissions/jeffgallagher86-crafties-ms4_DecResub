@@ -6,44 +6,50 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="" class="dropdown-item ">By Brewery</a>
+                <a href="" class="dropdown-item ">By Style</a>
+                <a href="" class="dropdown-item ">By Country</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Beers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="breweries-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Breweries
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Activewear &amp; Essentials</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Shirts</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="breweries-link">
+                <a href="{% url 'products' %}?brewery=kinnegar" class="dropdown-item">Kinnegar</a>
+                <a href="{% url 'products' %}?brewery=oharas" class="dropdown-item">O'Hara's</a>
+                <a href="{% url 'products' %}?brewery=lough_gill" class="dropdown-item">Lough Gill</a>
+                <a href="{% url 'products' %}?brewery=white_hag" class="dropdown-item">White Hag</a>
+                <a href="{% url 'products' %}?brewery=founders" class="dropdown-item">Founders</a>
+                <a href="{% url 'products' %}?brewery=lost_and_grounded" class="dropdown-item">Lost and Grounded</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="styles-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Beer Styles
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+            <div class="dropdown-menu border-0" aria-labelledby="styles-link">
+                <a href="{% url 'products' %}?style=ipa" class="dropdown-item">IPA</a>
+                <a href="{% url 'products' %}?style=stout" class="dropdown-item">Stout</a>
+                <a href="{% url 'products' %}?style=sour" class="dropdown-item">Sour</a>
+                <a href="{% url 'products' %}?style=pilsner" class="dropdown-item">Pilsner</a>
+                <a href="{% url 'products' %}?style=ale" class="dropdown-item">Ale</a>
+                <a href="{% url 'products' %}?style=gose" class="dropdown-item">Gose</a>
+                <a href="{% url 'products' %}?style=lager" class="dropdown-item">Lager</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact
+                Countries
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?country=ireland" class="dropdown-item">Ireland</a>
+                <a href="{% url 'products' %}?country=uk" class="dropdown-item">UK</a>
+                <a href="{% url 'products' %}?country=usa" class="dropdown-item">USA</a>
             </div>
         </li>
     </ul>
