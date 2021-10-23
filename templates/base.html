@@ -106,7 +106,7 @@
           </nav>
       </div>
       <div id="delivery-banner" class="row text-center">
-        <div class="col bg-theme text-white d-none d-sm-block">
+        <div class="col bg-dark text-white d-none d-sm-block">
             <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}</h4>
         </div>
       </div>
@@ -121,6 +121,72 @@
 
     {% block content %}
     {% endblock %}
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+                
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-theme">About Crafties</h5>
+                    <p>Welcome to Crafties, we are one of Irelands largest purveyors of craft beer. Here at Crafties
+                        we are as passionate about craft beer as you are. We strive to unearth interesting beers
+                        from all over the globe and provide to them to you for the most reasoanble prices possible!
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-theme">Contact</h5>
+                    <p>
+                        <i class="fas fa-home mr-2"></i>
+                        <span class="contact-links">Crafties House, Dublin, IE</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-2"></i>
+                        <span class="contact-links">01 830 0000</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span href="#" class="contact-links">jeffgallagher86@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+
+                <hr class="mb-4">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-7 col-lg-8">
+                        <p>
+                          Copyright ©2020 Jeff Gallagher
+                        </p>
+                    </div>
+
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+
+                            <u class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white"><i class="fab fa-facebook"></i></a>
+                                </li>
+                            </u>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </footer>
 
     {% block postloadjs %}
     {% endblock %}
