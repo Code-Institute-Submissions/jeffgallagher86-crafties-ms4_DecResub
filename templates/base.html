@@ -41,7 +41,7 @@
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <h1 class="logo-font my-0">Crafties</h1></a>
+            <h1 class="logo-font my-0"><strong>Crafties</strong></h1></a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <form method="GET" action="{% url 'products' %}">
@@ -107,7 +107,7 @@
       </div>
       <div id="delivery-banner" class="row text-center">
         <div class="col bg-theme text-white d-none d-sm-block">
-            <h4 class="logo-font my-2">Free delivery on orders over €{{ free_shipping_threshold }}</h4>
+            <h4 class="logo-font my-1">Free delivery on orders over €{{ free_shipping_threshold }}</h4>
         </div>
       </div>
     </header>

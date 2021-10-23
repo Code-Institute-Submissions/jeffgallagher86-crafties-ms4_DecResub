@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/cheers_landing_image.jpg') no-repeat center center fixed;
+    background: url('/media/beer-image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #424242;
@@ -28,10 +28,19 @@ body {
     color: #DFB959;
 }
 
+.main-logo-link:hover {
+    color: #b49444;
+}
+
 .shop-now-button {
     background: #DFB959;
     color: white;
     min-width: 260px;
+}
+
+.home-tagline {
+    color: #fff;
+    font-weight: 600;
 }
 
 .btn-black {
@@ -50,7 +59,7 @@ body {
 }
 
 .text-theme {
-    color: #b49444 !important;
+    color: #DFB959 !important;
 }
 
 .bg-theme {
