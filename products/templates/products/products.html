@@ -13,65 +13,131 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-       <div class="col text-center mt-3">
-           <h2 class="text-theme text-uppercase"><strong>Beers</strong></h2>
-           <hr class="w-50 mb-1">
-       </div>
+        <div class="col text-center mt-3">
+            <h2 class="text-theme text-uppercase"><strong>Beers</strong></h2>
+            <hr class="w-50 mb-1">
+        </div>
     </div>
     <div class="row">
-       <div class="product-container col-10 offset-1">
-           <div class="row mt-1 mb-2"></div>
+        <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-2"></div>
+            <div class="row mt-1 mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm rounded-0 border border-theme">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                            </option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                                (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                                (high to low)</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                                (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                                (Z-A)</option>
+                            <option value="brewery_asc" {% if current_sorting == 'brewery_asc' %}selected{% endif %}>
+                                Brewery (A-Z)</option>
+                            <option value="brewery_desc" {% if current_sorting == 'brewery_desc' %}selected{% endif %}>
+                                Brewery (Z-A)</option>
+                                <option value="style_asc" {% if current_sorting == 'style_asc' %}selected{% endif %}>
+                                    Style (A-Z)</option>
+                                <option value="style_desc" {% if current_sorting == 'style_desc' %}selected{% endif %}>
+                                    Style (Z-A)</option>
+                            <option value="country_asc" {% if current_sorting == 'country_asc' %}selected{% endif %}>
+                                Country (A-Z)</option>
+                            <option value="country_desc" {% if current_sorting == 'country_desc' %}selected{% endif %}>
+                                Country (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {% if search_term or current_breweries or current_styles or current_countries or current_sorting != 'None_None' %}
+                        <span class="small"><a href="{% url 'products' %}">All Beers</a> | </span>
+                        {% endif %}
+                        {{ products|length }} Products{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
+                </div>
+            </div>
             <div class="row">
                 {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
-                                <div class="card-body pb-1 text-center">
-                                    <p class="mb-0 font-weight-bold">{{ product.name }}</p>
-                                </div>
-                                <div class="card-footer bg-white pt-0 pb-1 border-0 text-center">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="lead mb-0 font-weight-bold text-theme text-center">€{{ product.price }}</p>
-                                            {% if product.abv %}
-                                                <small class="text-muted">{{ product.abv }}%</small>
-                                            {% endif %}
-                                        </div>
-                                    </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 border-0">
+                        {% if product.image %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-1 text-center">
+                            <p class="mb-0 font-weight-bold">{{ product.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 pb-1 border-0 text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 font-weight-bold text-theme text-center">€{{ product.price }}
+                                    </p>
+                                    {% if product.brewery %}
+                                    <span class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'products' %}?brewery={{ product.brewery.name }}">
+                                            {{ product.brewery.friendly_name }}
+                                        </a> |
+                                    </span>
+                                    {% endif %}
+                                    {% if product.style %}
+                                    <span class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'products' %}?style={{ product.style.name }}">
+                                            {{ product.style.friendly_name }}
+                                        </a> |
+                                    </span>
+                                    {% endif %}
+                                    {% if product.country %}
+                                    <span class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'products' %}?country={{ product.country.name }}">
+                                            {{ product.country.friendly_name }}
+                                        </a>
+                                    </span>
+                                    {% endif %}
+                                    {% if product.abv %}
+                                    <p><small class="text-muted">{{ product.abv }}%</small></p>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
-                        {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}                        
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
-       </div>
+        </div>
     </div>
 </div>
 {% endblock %}

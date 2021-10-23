@@ -3,8 +3,6 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, BreweryCategory, StyleCategory, CountryCategory
 
-# Create your views here.
-
 
 def all_products(request):
     """ View to show all products, including sorting and search queries """
@@ -17,6 +15,8 @@ def all_products(request):
     sort = None
     direction = None
 
+    # Sorts products by price or a-z for each category
+
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -24,13 +24,19 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-
-            
+            if sortkey == 'brewery':
+                sortkey = 'brewery__name'
+            elif sortkey == 'style':
+                sortkey = 'style__name'
+            elif sortkey == 'country':
+                sortkey = 'country__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
+
+    # Filters products by brewery, style or country and search function
 
         if 'brewery' in request.GET:
             breweries = request.GET['brewery'].split(',')
@@ -63,7 +69,7 @@ def all_products(request):
         'search_term': query,
         'current_breweries': breweries,
         'current_styles': styles,
-        'current_counries': countries,
+        'current_countries': countries,
         'current_sorting': current_sorting,
     }
 
