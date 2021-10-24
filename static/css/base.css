@@ -88,6 +88,19 @@ body {
     cursor: pointer;
 }
 
+.btn-outline-theme {
+    background: #fff;
+    color: #DFB959 !important;
+    border: 1px solid #DFB959;
+}
+
+.btn-outline-theme:hover,
+.btn-outline-theme:active,
+.btn-outline-theme:focus {
+    background: #DFB959;
+    color: #fff !important;
+}
+
 .comments-section {
     background-color: rgba(238, 199, 139, 0.623);
 }
