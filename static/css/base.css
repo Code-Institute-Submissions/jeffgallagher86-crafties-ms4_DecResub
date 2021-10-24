@@ -62,10 +62,6 @@ body {
     color: #DFB959 !important;
 }
 
-.bg-theme {
-    background: #424242;
-}
-
 .border-theme {
     border: 2px solid #DFB959 !important;
 }
@@ -96,9 +92,10 @@ body {
     background-color: rgba(238, 199, 139, 0.623);
 }
 
-.contact-links {
-    
+.btn-lg {
+    padding: .5rem .5rem;
 }
+
 
 /* -------------------------------- Media Queries */
 
