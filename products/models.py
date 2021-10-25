@@ -7,6 +7,7 @@ class BreweryCategory(models.Model):
         verbose_name_plural = 'Brewery Category'
 
     name = models.CharField(max_length=254)
+    brewery_description = models.TextField(blank=True)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
