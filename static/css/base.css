@@ -62,6 +62,10 @@ body {
     color: #DFB959 !important;
 }
 
+.text-theme-dark {
+    color: #b19245 !important;
+}
+
 .border-theme {
     border: 2px solid #DFB959 !important;
 }
