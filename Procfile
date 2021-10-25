@@ -1,1 +1,1 @@
-web: gunicorn crafties-ms4.wsgi:application
+web: gunicorn crafties-ms4-jg.wsgi:application
