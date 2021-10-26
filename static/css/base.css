@@ -181,6 +181,10 @@ body {
     overflow-y: auto;
 }
 
+.wishlist-btn {
+    font-size: 38px !important;
+}
+
 
 /* -------------------------------- Media Queries */
 
