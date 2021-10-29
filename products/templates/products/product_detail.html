@@ -56,9 +56,15 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        <a href="">
+                                        {% if wishlist %}
+                                        <a href="{% url 'add_to_wishlist' product.id %}">
+                                            <i class="fas fa-heart fa-lg text-theme wishlist-btn ml-3" aria-hidden="true"></i>
+                                        </a>
+                                        {% else %}
+                                        <a href="{% url 'add_to_wishlist' product.id %}">
                                             <i class="far fa-heart fa-lg text-theme wishlist-btn ml-3" aria-hidden="true"></i>
                                         </a>
+                                        {% endif %}
                                     </div>
                                 </div>
                                 {% if request.user.is_superuser %}

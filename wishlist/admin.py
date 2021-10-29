@@ -5,6 +5,7 @@ from .models import Wishlist
 class WishlistAdmin(admin.ModelAdmin):
     list_display = (
         'wishlist_user',
+        'product',
     )
 
 
