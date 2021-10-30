@@ -13,7 +13,7 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col text-center mt-5">
             <h2 class="text-theme text-uppercase"><strong>Beers</strong></h2>
             <hr class="w-50 mb-1">
         </div>
@@ -54,7 +54,7 @@
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_breweries or current_styles or current_countries or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'products' %}">All Beers</a> | </span>
+                        <span><a class="text-theme-dark" href="{% url 'products' %}">All Beers</a> | </span>
                         {% endif %}
                         {{ products|length }} Products{% if search_term %} found for
                         <strong>"{{ search_term }}"</strong>{% endif %}
@@ -84,7 +84,7 @@
                                     <p class="lead mb-0 font-weight-bold text-theme text-center">€{{ product.price }}
                                     </p>
                                     {% if product.brewery %}
-                                    <span class="small mt-1 mb-0">
+                                    <span class="mt-1 mb-0">
                                         <a class="text-muted"
                                             href="{% url 'products' %}?brewery={{ product.brewery.name }}">
                                             {{ product.brewery.friendly_name }}
@@ -92,7 +92,7 @@
                                     </span>
                                     {% endif %}
                                     {% if product.style %}
-                                    <span class="small mt-1 mb-0">
+                                    <span class="mt-1 mb-0">
                                         <a class="text-muted"
                                             href="{% url 'products' %}?style={{ product.style.name }}">
                                             {{ product.style.friendly_name }}
@@ -100,7 +100,7 @@
                                     </span>
                                     {% endif %}
                                     {% if product.country %}
-                                    <span class="small mt-1 mb-0">
+                                    <span class="mt-1 mb-0">
                                         <a class="text-muted"
                                             href="{% url 'products' %}?country={{ product.country.name }}">
                                             {{ product.country.friendly_name }}

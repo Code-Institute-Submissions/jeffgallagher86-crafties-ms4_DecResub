@@ -35,7 +35,7 @@ body {
 .shop-now-button {
     background: #DFB959;
     color: white;
-    min-width: 260px;
+    text-transform: uppercase;
 }
 
 .home-tagline {
@@ -127,7 +127,7 @@ body {
 }
 
 .toast-capper {
-    height: 2px;
+    height: 4px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -293,13 +293,53 @@ body {
     }
 }
 
-/* padding for top when navbar is collapsed on mobile */
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
 
-    .body {
+    body {
         height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.home-tagline {
+        font-size: 2.5rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: 1rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: 1rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
+    .text-theme-dark.font-weight-bold.text-theme.nav-link {
+        color: #b19245 !important;
     }
 }

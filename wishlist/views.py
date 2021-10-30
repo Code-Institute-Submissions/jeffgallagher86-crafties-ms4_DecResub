@@ -23,8 +23,8 @@ def wishlist(request):
 
 
 @login_required
-def add_to_wishlist(request, product_id):
-    """ A view to add products to wishlist """
+def wishlist_toggle(request, product_id):
+    """ A view to add and remove product to and from wishlist """
 
     profile = get_object_or_404(UserProfile, user=request.user)
     product = get_object_or_404(Product, pk=product_id)

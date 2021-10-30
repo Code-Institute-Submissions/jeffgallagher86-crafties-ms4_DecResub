@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
+                <div class="image-container my-3">
                     {% if product.image %}
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         {% else %}
@@ -57,11 +57,11 @@
                                             </button>
                                         </div>
                                         {% if wishlist %}
-                                        <a href="{% url 'add_to_wishlist' product.id %}">
+                                        <a href="{% url 'wishlist_toggle' product.id %}">
                                             <i class="fas fa-heart fa-lg text-theme wishlist-btn ml-3" aria-hidden="true"></i>
                                         </a>
                                         {% else %}
-                                        <a href="{% url 'add_to_wishlist' product.id %}">
+                                        <a href="{% url 'wishlist_toggle' product.id %}">
                                             <i class="far fa-heart fa-lg text-theme wishlist-btn ml-3" aria-hidden="true"></i>
                                         </a>
                                         {% endif %}

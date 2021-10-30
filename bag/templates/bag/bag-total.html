@@ -1,0 +1,10 @@
+<h6><strong>Bag Total: <span class="text-theme-dark">€{{ total|floatformat:2 }}</span></strong></h6>
+<h6>Delivery: <span class="text-theme-dark">€{{ delivery|floatformat:2 }}</span></h6>
+<h4 class="mt-4"><strong>Grand Total: <span class="text-theme-dark">€{{ grand_total|floatformat:2 }}</span></strong>
+</h4>
+{% if free_delivery_delta > 0 %}
+<p class="mb-1 text-dark">
+    You could get free delivery by spending just <strong class="text-theme-dark">€{{ free_delivery_delta }}</strong>
+    more!
+</p>
+{% endif %}
