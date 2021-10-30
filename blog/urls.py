@@ -5,4 +5,3 @@ urlpatterns = [
     path('', views.blog, name='blog'),
     path('<slug:slug>', views.blog_post, name='blog_post'),
 ]
-
