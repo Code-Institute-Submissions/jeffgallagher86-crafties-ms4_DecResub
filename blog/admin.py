@@ -8,7 +8,6 @@ class BlogAdmin(admin.ModelAdmin):
         'slug',
         'author',
         'image',
-        'content',
         'created_on',
     )
 
