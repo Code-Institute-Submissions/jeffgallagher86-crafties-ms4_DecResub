@@ -20,11 +20,17 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='wishlist',
             name='product',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='wishlist_products', to='products.product'),
+            field=models.ForeignKey(
+                blank=True, null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='wishlist_products', to='products.product'),
         ),
         migrations.AlterField(
             model_name='wishlist',
             name='wishlist_user',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='wishlist', to='profiles.userprofile'),
+            field=models.ForeignKey(
+                blank=True, null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='wishlist', to='profiles.userprofile'),
         ),
     ]

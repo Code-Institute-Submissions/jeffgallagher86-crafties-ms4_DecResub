@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -37,9 +37,9 @@ def wishlist_toggle(request, product_id):
             f'{product.name} has been removed from your wishlist!')
         return redirect('/products/' + str(product.id) + '/')
     else:
-        new_wishlist=Wishlist()
-        new_wishlist.wishlist_user=profile
-        new_wishlist.product=product
+        new_wishlist = Wishlist()
+        new_wishlist.wishlist_user = profile
+        new_wishlist.product = product
         new_wishlist.save()
         messages.success(request, f'{product.name} added to wishlist!')
         return redirect('/products/' + str(product.id) + '/')

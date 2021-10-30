@@ -62,6 +62,10 @@ body {
     color: #DFB959 !important;
 }
 
+.bg-theme {
+    background-color: #DFB959;
+}
+
 .text-theme-dark {
     color: #b19245 !important;
 }
