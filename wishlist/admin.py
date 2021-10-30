@@ -9,4 +9,4 @@ class WishlistAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Wishlist)
+admin.site.register(Wishlist, WishlistAdmin)

@@ -13,4 +13,4 @@ class Blog(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.title + ' | ' + self.author
+        return self.title
