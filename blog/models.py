@@ -2,7 +2,7 @@ from django.db import models
 from profiles.models import UserProfile
 
 
-class Post(models.Model):
+class Blog(models.Model):
     title = models.CharField(max_length=150, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
