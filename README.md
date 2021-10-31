@@ -1,108 +1,228 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Crafties
 
-Welcome jeffgallagher86,
+Crafties is a fictional online off-license which specialises in craft beer. It is a fully functional e-commerce store which utilises Django to construct and Postgres for the Database. It also uses Stripe for the payment system and Amazon web services for the file and media storage.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View Live Website Here](https://crafties-ms4-jg.herokuapp.com/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Crafties](static/docs/multi-screen-mockup.png "Crafties")
 
-## Gitpod Reminders
+# UX
+## User Stories
+![User Stories](static/docs/user_stories.png "User Stories")
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+___
 
-A blue button should appear to click: _Make Public_,
+# Design Choices
 
-Another blue button should appear to click: _Open Browser_.
+### Colour Scheme
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+My aim with the colour scheme of the site was for the aesthetic to be visually pleasing. I used the gold colour which has quite a rich feel and a colour of beer to it, inkeeping with the theme of the site. I offset this with a bootstraps built in Dark class which is more of a charcoal colour which brought contrast without being to jarring visually.
 
-A blue button should appear to click: _Make Public_,
+![Colour Scheme](static/docs/colour-swatch.png "Colour Scheme")
 
-Another blue button should appear to click: _Open Browser_.
+### Typography
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The font I have used was chosen to both eye catching and funtional. I think the Jost font adds a stylish and energetic look to the app.
 
-To log into the Heroku toolbelt CLI:
+[Google Fonts](https://fonts.google.com/): Jost
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Google Fonts](static/docs/google-font-jost.png "Google Fonts")
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+## Wireframes 
 
-## Release History
+Here are my original wireframe mockups.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Balsamiq Wireframes](static/docs/wireframes.png "Balsamiq Wireframes")
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+For the design of the app i wanted to keep things simple and easy to navigate. I used Balsamiq to create some mock ups of the visual nature of  the app.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* I used a big impactful heroimage for the landing page
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* I added a footer with the about, contact and socials information so that this info would be readily available across all pages rather than building seperate pages for the info and bloating the app.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# Database Design
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Database Schema
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Schmema](static/docs/database_schema.png "Database Schema")
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+--------
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Features
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* Home and Base templates
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    Feature the home page and the base template which runs the header, navbars and footer across all pages on the app. This also includes the toasts for the app which provide updated shopping bag info.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    ![Toast](static/docs/toast.png "Toast")
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Bag
 
-------
+    Contains all the code for the shopping bag.
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+* Profiles
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    Contains a form for users info and order history.
 
-**How will this affect me?**
+    ![Profile](static/docs/profile-page.png "Profile")
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* Checkout
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    Contains a form for the shoppers details and an order summary.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Blog
 
-**So….?**
+    Contains the blog section of the app, where there will be regular blog posts added by the site owner. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    ![Blog](static/docs/blog.png "Blog")
 
-**Can I opt out?**
+* Wishlist
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    Contains all the functionality for the wishlist feature of the site, where to can use the heart toggle button on the product detail page to add or remove items from a wishlist.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+    ![Wishlist](static/docs/wishlist-toggle.png "Wishlist toggler")
 
-**Anything more?**
+## Future Scope
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* Ratings and Comments feature for each beer.
+
+* A special offers, deals and beers of the month section.
+
+* An expanded breweries section.
+----------
+
+
+
+# Technologies Used
+
+## Languages Used
+
+* [HTML](https://en.wikipedia.org/wiki/HTML5)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+* [Django](https://www.djangoproject.com/)
+
+
+# Frameworks, Libraries, Programs and Sites.
+
+* [Django](https://materializecss.com/) - used as a framework in conjunction with Python
+
+* [Bootstrap](https://getbootstrap.com/) - used for Navbar, grid system and styling throughout the site.
+
+* [Photoshop](https://www.adobe.com/ie/products/photoshop.html) - for image editing.
+
+* [Balsamiq](https://balsamiq.com/) - for wireframes.
+
+* [tinypng](https://tinypng.com/) - to reduce the size of the images used.
+
+* [FontAwesome](https://fontawesome.com/) - for the icons used on the site.
+
+* [Google Fonts](https://fonts.google.com/) - for the fonts used. 
+
+* [GitHub](https://github.com/) - to host and publish the site.
+
+* [Gitpod](https://gitpod.io/) - Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+* [Heroku](https://www.heroku.com/) - Used for deployment of web app.
+
+* [Stripe](https://www.heroku.com/) - Used for deployment of web app.
+
+* [Amazon Web Services](https://www.heroku.com/) - Used for deployment of web app.
+
+# Testing
+
+## Manual Testing
+
+Manual testing was carried out on devices of all sizes including desktop, tablet and mobiles.
+
+## Code Validation
+
+I used W3 Schools code validators for the HTML and CSS, there are no errors in the HTML. 
+
+There are errors in the CSS which can be attributed to the Materialize classes used on the site. There was one error in the CSS i had written.
+
+![Onward & Upward](static/docs/html-valid.png "Onward & Upward")
+
+![Onward & Upward](static/docs/css-no-error.png "Onward & Upward")
 
 ---
 
-Happy coding!
+## Lighthouse and WAVE Web Accessibility Reports
+
+![Lighthouse Report](static/docs/desktop-performance.png "Lighthouse Report")
+
+
+
+
+# Deployment
+
+## Deploying Project
+
+This project was deployed to [Heroku](https://www.heroku.com/) as follows:
+
+1. Create a requirements.txt file by typing the following command into the terminal: pip3 freeze --local > requirements.txt
+
+2. Create a Procfile by typing the following command into the terminal:
+echo web: python run.py > Procfile
+
+3. Save, add, commit and push the new files to your repository.
+
+4. Sign Up/Login into [Heroku](https://www.heroku.com/) and create a new app. Give the app a unique name.
+
+5. Select 'GitHub' from Deployment method options and search for the repository name. Once found, click on connect.
+
+6. Head over to the settings menu and update the Config Vars to the following key, value pairs:
+
+7. Go to the deploy tab and click on Deploy Branch.
+
+
+## Cloning Project 
+
+1. Log-in to GitHub and open the repo for [Crafties](https://github.com/jeffgallagher86/crafties-ms4)
+2. Locate and click on the code section at the top of the page.
+3. Click the code button as shown below to show copy of URL
+4. Open Git bash terminal.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type in "git clone" followed by the copied URL and press enter key to create a local clone.
+
+
+# Credits
+
+## Code Institute - Boutique Ado
+
+* A lot of the code and design for this project was adapted from Code Institute's Boutique Ado project
+
+## Media
+
+* Images in Home Page slider courtesty of Stephen Coyle and Steven Hylands on Flickr
+
+* Credit goes to [Craft Beers Delivered](https://www.craftbeersdelivered.com/) for the site content including images and beer descriptions and info.
+
+* Credit goes to [Craft Beer Club](https://craftbeerclub.com/blog) for the blog content of the site.
+
+## Code
+
+* Fonts used courtesy of [Google Fonts](https://fonts.google.com/).
+
+* CSS used for Navbar, grid system and styling throughout the site taken from [Bootstrap](https://getbootstrap.com/).
+
+* Icons used in site taken from [Font Awesome](https://fontawesome.com/).
+
+* Some small snippets of code used from users on [Stack Overflow](https://stackoverflow.com/) and YouTube.
+
+* Credit also goes to [w3Schools](http://w3schools.com/) for help along the way.
+
+## Acknowledgements
+* I would like to thank my mentor Rohit Sharma for all his help with this project.
+
+* I'd also like to thank all at Code Institute and the CI slack community for all their help along the way.
+
+**Thank you very much for taking the time to review my work!**
+
+
