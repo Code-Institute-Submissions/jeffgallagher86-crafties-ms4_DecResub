@@ -71,9 +71,17 @@ For the design of the app i wanted to keep things simple and easy to navigate. I
 
     ![Profile](static/docs/profile-page.png "Profile")
 
+* Product
+
+    Contains product view and also access to product manager for the site owner to add and edit products on the app.
+
+    ![Add products](static/docs/add-product-section.png "Add products")
+
 * Checkout
 
     Contains a form for the shoppers details and an order summary.
+
+    ![Checkout](static/docs/checkout.png "Checkout")
 
 * Blog
 
@@ -129,11 +137,17 @@ For the design of the app i wanted to keep things simple and easy to navigate. I
 
 * [Gitpod](https://gitpod.io/) - Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
+* [Jquery](https://jquery.com/) - for the JS.
+
+* [SQLite](https://www.sqlite.org/) - for the initial database.
+
+* [PostgreSQL](https://www.postgresql.org/) - for the Heroku deployed database.
+
 * [Heroku](https://www.heroku.com/) - Used for deployment of web app.
 
-* [Stripe](https://www.heroku.com/) - Used for deployment of web app.
+* [Stripe](https://stripe.com/) - Used for payments system on the app.
 
-* [Amazon Web Services](https://www.heroku.com/) - Used for deployment of web app.
+* [Amazon Web Services](https://aws.amazon.com/) - Used s3 bucket for storing media and static files.
 
 # Testing
 
@@ -143,20 +157,29 @@ Manual testing was carried out on devices of all sizes including desktop, tablet
 
 ## Code Validation
 
-I used W3 Schools code validators for the HTML and CSS, there are no errors in the HTML. 
+I used W3 Schools code validators for the HTML and CSS.
 
-There are errors in the CSS which can be attributed to the Materialize classes used on the site. There was one error in the CSS i had written.
+* I found a couple of bugs in the code which i have rectified, there was a duplicate ID tag and a href attribut in a span tag which have been removed.
 
-![Onward & Upward](static/docs/html-valid.png "Onward & Upward")
+![Crafties html report](static/docs/html-validation-bugs.png "Crafties html report")
 
-![Onward & Upward](static/docs/css-no-error.png "Onward & Upward")
+![Crafties html report](static/docs/html-validation-report.png "Crafties html report")
+
+* There were no errors in the CSS.
+
+![Crafites CSS Report](static/docs/CSS-validator.png "Crafites CSS Report")
+
+## Other Testing
+
+* I ran the [JSHint](https://jshint.com/) command in the terminal to review the javascript code and corrected where possible.
+
+* I ran the [Flake8](https://flake8.pycqa.org/en/latest/) command in the terminal to review the python code and corrected where possible to clean the code and make it Pep8 compliant.
 
 ---
 
-## Lighthouse and WAVE Web Accessibility Reports
+## Lighthouse Accessibility Report
 
 ![Lighthouse Report](static/docs/desktop-performance.png "Lighthouse Report")
-
 
 
 
@@ -200,11 +223,11 @@ echo web: python run.py > Procfile
 
 ## Media
 
-* Images in Home Page slider courtesty of Stephen Coyle and Steven Hylands on Flickr
-
 * Credit goes to [Craft Beers Delivered](https://www.craftbeersdelivered.com/) for the site content including images and beer descriptions and info.
 
 * Credit goes to [Craft Beer Club](https://craftbeerclub.com/blog) for the blog content of the site.
+
+* All other images on the site are from unsplash.
 
 ## Code
 
