@@ -151,6 +151,8 @@ For the design of the app i wanted to keep things simple and easy to navigate. I
 
 # Testing
 
+* [Testing](TESTING.md) - Manual and Automatic testing.
+
 ## Manual Testing
 
 Manual testing was carried out on devices of all sizes including desktop, tablet and mobiles.
