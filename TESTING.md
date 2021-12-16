@@ -95,7 +95,7 @@
 
 * As the store owner i want to add a product so that i can add new items to the store
 
-![User Stories](static/docs/wishlist.png "Add Product")
+![User Stories](static/docs/product-management-page.png "Add Product")
 
 * As the store owner i want to edit/update product so that i can change product prices, descriptions, images etc.
 
@@ -105,19 +105,21 @@
 
 ![User Stories](static/docs/product-edit-page.png "Edit Page")
 
-All tests carried out on Email confirmation, Updating Product, etc. Successful
+---
 
-### Responsivenes Testing
+## Responsivenes Testing
+
+App responsiveness tested across multiple mobile and desktop screens with the [Responsive Viewer chrome extension](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en)
 
 ---
 
 ## Automated Testing
 
 ### Code Validation
----
+
 I used W3 Schools code validators for the HTML and CSS.
 
-* I found a couple of bugs in the code which i have rectified, there was a duplicate ID tag and a href attribut in a span tag which have been removed.
+* Ran checks accross all pages through the html validator, all bugs found were corrected.
 
 ![Crafties html report](static/docs/html-validation-bugs.png "Crafties html report")
 
@@ -128,17 +130,25 @@ I used W3 Schools code validators for the HTML and CSS.
 ![Crafites CSS Report](static/docs/CSS-validator.png "Crafites CSS Report")
 
 ## Other Testing
----
+
 * I ran the [JSHint](https://jshint.com/) command in the terminal to review the javascript code and corrected where possible.
 
 * I ran the [Flake8](https://flake8.pycqa.org/en/latest/) command in the terminal to review the python code and corrected where possible to clean the code and make it Pep8 compliant.
 
----
+* Passed the [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
+
+* 
 
 ## Lighthouse Accessibility Report
+
+## Desktop Report
 
 ![Lighthouse Report](static/docs/lightouse-report.png "Lighthouse Report")
 
 - Added meta description tag in base template to improve seo rating of 89 to 100
 
 `<meta name="description" content="crafties an irish online craft beer shop, selling ale, lager, stout, saison.">`
+
+## Mobile Report
+
+![Lighthouse Report](static/docs/mobile-lighthouse-report.png "Lighthouse Report")
