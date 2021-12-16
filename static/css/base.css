@@ -272,6 +272,15 @@ body {
     border-radius: 0;
 }
 
+/* footer {
+    position: fixed;
+    height: 375px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+} */
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -307,7 +316,7 @@ body {
     }
 
     .display-4.logo-font.home-tagline {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .nav-link {
