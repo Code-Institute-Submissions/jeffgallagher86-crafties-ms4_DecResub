@@ -2,6 +2,8 @@
 
 ## Manual Testing
 
+Tested all links, buttons and functions on site. Documented below is all testing carried out on the site which  includes search function, product/category sorting, CRUD functionality, site registration, e-mail confirmation and payments.
+
 ### User Stories Testing
 
 * As a shopper I want to view a list of products so that i can see what i can buy
@@ -137,7 +139,9 @@ I used W3 Schools code validators for the HTML and CSS.
 
 * Passed the [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
 
-* 
+* Tested the site for accessibility for people with disabilities through the [Web Accessibility generator](https://www.webaccessibility.com/)
+
+
 
 ## Lighthouse Accessibility Report
 
@@ -152,3 +156,7 @@ I used W3 Schools code validators for the HTML and CSS.
 ## Mobile Report
 
 ![Lighthouse Report](static/docs/mobile-lighthouse-report.png "Lighthouse Report")
+
+# Bugs
+
+- No bugs to report
